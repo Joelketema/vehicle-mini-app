@@ -30,6 +30,9 @@ const VehicleTable = ({ vehicles, setVehicles }) => {
                     </tr>
                 </thead>
                 <tbody>
+                      {vehicles === undefined && vehicles?.length === 0 && (
+                        <div className="text-center">No vehicles found</div>
+                    )}
                     {vehicles.map((vehicle) => (
                         <tr key={vehicle._id}>
                             <td className="p-2 border">{vehicle.name}</td>
