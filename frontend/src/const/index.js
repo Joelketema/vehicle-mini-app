@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:5000/api/vehicles";
+export const API_URL = "https://mini-app-server.vercel.app/api/vehicles";
